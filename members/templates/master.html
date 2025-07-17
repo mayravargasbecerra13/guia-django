@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .contenedor_principal{
+            background-color: #98aa98;
+            background-color: #98aa98;
+            width: 800px;
+            display: block;
+            margin: auto;
+            border-radius: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            
+        }
+        .nav_menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 28px;
+        }
+        .nav_menu a{
+            text-decoration: none;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav_menu a:hover{
+            color: #f1ee16;
+        }
+        .nav_menu img{
+            width: 100px
+        }
+        .contenedor_uno {
+            color: white;
+            padding: 20px;
+        }
+        .contenedor_uno h1{
+            font-size: 50px;
+        }
+        .contenedor_uno p{
+            font-size: 12px;
+        }
+        
+        .contenedor_dos {
+            color: white;
+            padding: 20px;
+        }
+        .contenedor_flex{
+            display: flex;
+            flex-direction: row;
+        }
+        .contenedor_flex button{
+            border-radius: 22px;
+            background-color: #dddd1f;
+            margin: 10px;
+    border: none;
+    padding: 10px;
+        }
+        .perfil p{
+            font-size: 14px;
+    font-family: initial;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav_menu">
+        <img src="https://cdn.worldvectorlogo.com/logos/sport-avenue-3.svg" alt="Fjords" >
+        <a href="/">Home</a>
+        <a href="">About</a>
+        <a href="">Coaches</a>
+        <a href="">Pricing</a>
+        <a href="">Contact</a>
+    </nav>
+    <div class="contenedor_principal">
+    
+    <div class="contenedor_flex">
+        <div class="contenedor_uno">
+            <h5>Nuestro equipo</h5>
+        <h1>Entrenadores expertos que le guía haca el exito</h1>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button>Nuestro contacto</button>
+        </div>
+
+        <div class="contenedor_dos">
+            <button>Nuestro contacto</button>
+            <div class="perfil">
+        <img src="data:image/jpeg;base64,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">
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Tina Perry</h2>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    {% block content %}
+    {% endblock %}
+
+    
+</body
