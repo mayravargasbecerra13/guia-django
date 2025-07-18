@@ -3,6 +3,26 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     <style>
+    :root {
+    --light-cream: #FDFCF7;
+    --sage-green: #9FA890;
+    --mustard-yellow: #E8C547;
+    --text-dark: #3D3D3D;
+    --text-light: #FFFFFF;
+    --nav-dark: #333333;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background-color: var(--light-cream);
+    font-family: var(--font-family);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    width: 96%;
+}
+
         .contenedor_principal{
             background-color: #98aa98;
             background-color: #98aa98;
@@ -11,14 +31,18 @@
             margin: auto;
             border-radius: 25px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: 37px;
 
             
         }
         .nav_menu{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            display: flex;                  
+            align-items: center;            
+            justify-content: space-between;
             padding: 28px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: var(--sage-green);
         }
         .nav_menu a{
             text-decoration: none;
@@ -56,13 +80,43 @@
             border-radius: 22px;
             background-color: #dddd1f;
             margin: 10px;
-    border: none;
-    padding: 10px;
+        border: none;
+        padding: 10px;
         }
         .perfil p{
             font-size: 14px;
-    font-family: initial;
+            font-family: initial;
         }
+    .contenedor_db{
+        display: block;
+        background: #eaf4e9;
+        margin: auto;
+        width: 385px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 25px;
+        padding: 28px;
+        margin-top: 28px;
+    }
+    .contenedor_db ul a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        
+    }
+    .contenedor_db ul{
+        list-style: none;
+    }
+    .contenedor_db h1{
+        font-size: 20px
+    }
+    .contenedor_db p{
+        text-align: center;
+    font-size: 29px;
+    }
+    .cont_li li {
+    margin-bottom: 10px;
+}
+
     </style>
 </head>
 <body>

@@ -5,13 +5,15 @@
 {% endblock %}
 
 {% block content%}
+<div class="contenedor_db">
+    <ul>
     <p><a href="/">HOME</a></p>
     <h1>Members</h1>
-
-    <ul>
+    <div class="cont_li">
     {% for  x in mymembers %}
         <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname}} {{ x.phone }} </a></li>
     {% endfor%}
+    </div>
     </ul>
-
+</div>
 {% endblock %}
